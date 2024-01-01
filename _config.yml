@@ -8,7 +8,7 @@ author:
   url: "https://thereviewindex.com"
 
 # Build settings
-baseurl: /blog
+baseurl: /
 markdown: kramdown
 source: .
 destination: ./_site
@@ -18,8 +18,7 @@ paginate_path: /page:num/
 
 # Default values
 defaults:
-  -
-    scope:
+  - scope:
       path: ""
       type: "posts"
     values:

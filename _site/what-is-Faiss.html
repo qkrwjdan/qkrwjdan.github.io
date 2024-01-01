@@ -2,34 +2,38 @@
 <html>
 
 <head>
-	<!-- Meta -->
-	<meta charset="UTF-8"/>
-	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
-	<meta name="generator" content="Jekyll">
+  <!-- Meta -->
+  <meta charset="UTF-8" />
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0, maximum-scale=1"
+  />
+  <meta name="generator" content="Jekyll" />
 
-	<title>Faiss 란?</title>
-  <meta name="description" content="Faiss에 대해 알아보자">
+  <title>
+    Faiss 란?
+  </title>
+  <meta
+    name="description"
+    content="Faiss에 대해 알아보자"
+  />
 
-	<!-- CSS & fonts -->
-	<link rel="stylesheet" href="/blog/css/main.css">
+  <!-- CSS & fonts -->
+  <link
+    rel="stylesheet"
+    href="/css/main.css"
+  />
 
-	<!-- RSS -->
-	<link href="/atom.xml" type="application/atom+xml" rel="alternate" title="ATOM Feed" />
+  <!-- RSS -->
+  <link
+    href="/atom.xml"
+    type="application/atom+xml"
+    rel="alternate"
+    title="ATOM Feed"
+  />
 
   <!-- Favicon -->
-  <link rel="shortcut icon" type="image/png" href="img/favicon.png">
-
-  
-  <script>
-    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-    ga('create', 'G-82PP66GVH4', 'auto');
-    ga('send', 'pageview');
-  </script>
-  
-
+  <link rel="shortcut icon" type="image/png" href="img/favicon.png" />
 </head>
 
 
@@ -39,14 +43,14 @@
 	  	<!-- Navigation -->
 	  	<nav id="nav">
 	<div id="nav-list">
-		<a href="/blog/">Home</a>
+		<a href="//">Home</a>
 
 		<!-- Nav pages -->
 	  
 	    
 	  
 	    
-	      <a href="/blog/about" title="About Monochrome">About Monochrome</a>
+	      <a href="/about" title="About Monochrome">About Monochrome</a>
 	    
 	  
 	    
@@ -59,15 +63,15 @@
     <!-- Nav links -->
 	  <!-- nav 링크들 -->
 
+
 	</div>
   
   <!-- Nav footer -->
 	
 	  <footer>
-	
-	<span>version 1.0.0</span>
-
+  <span>version 1.0.0</span>
 </footer>
+
 	
 
 </nav>
@@ -82,38 +86,27 @@
       
         <header id="header" class="parent justify-spaceBetween">
   <div class="inner w100 relative">
-    <span class="f-left">  
-      <a href="/blog/">
-        <h1>
-          기술<span>블로그</span>
-        </h1>
+    <span class="f-left">
+      <a href="//">
+        <h1>기술<span>블로그</span></h1>
       </a>
     </span>
     <span id="nav-links" class="absolute right bottom">
       <!-- Nav pages -->
-	    
-	      
-	    
-	      
-	        <a href="/blog/about" title="About Monochrome">About Monochrome</a>
-	      
-	    
-	      
-	    
-	      
-	    
-	      
-	    
-      
+         
+      <a
+        href="/about"
+        title="About Monochrome"
+        >About Monochrome</a
+      >
+             
+
       <!-- Nav links -->
-	    <!-- nav 링크들 -->
+      <!-- nav 링크들 -->
 
     </span>
   </div>
 </header>
-
-
-
 
       
 
@@ -123,11 +116,13 @@
 		<main>
 
 			<article id="post-page">
-	<h2>Faiss 란?</h2>		
-	<time datetime="2023-01-01T00:00:00+09:00" class="by-line">01 Jan 2023</time>
-	<div class="content">
-
-		<h2 id="faiss란">Faiss란?</h2>
+  <h2>
+    Faiss 란?
+  </h2>
+  <time datetime="2023-01-01T00:00:00+09:00" class="by-line"
+    >01 Jan 2023</time
+  >
+  <div class="content"><h2 id="faiss란">Faiss란?</h2>
 
 <p>Faiss는 Facebook AI Research에서 개발한 고효율 라이브러리로, 대규모 벡터 집합의 유사성 검색 및 클러스터링을 위해 설계되었다. 특히, 고차원 벡터 공간에서의 빠른 검색을 지원하는 것이 주요 기능이다. 이 라이브러리는 C++로 작성되었으며, Python 인터페이스를 통해 쉽게 접근할 수 있다. Faiss는 이미지, 비디오, 텍스트 데이터 등 다양한 유형의 데이터를 고차원 벡터로 변환한 후 이를 효과적으로 인덱싱하고 검색하는 데 사용된다. 대규모 데이터셋에 대한 처리 속도와 정확도가 뛰어나, 빅 데이터 및 인공 지능 애플리케이션에 널리 사용된다. Faiss는 다양한 유형의 인덱스 구조를 제공하며, 사용자가 자신의 데이터 특성에 맞게 선택할 수 있는 유연성을 갖추고 있다.</p>
 
@@ -173,34 +168,31 @@
 
 <p>간단한 코드 예시는 다음과 같다:</p>
 
-<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">import</span> <span class="nn">faiss</span>
-<span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="n">np</span>
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">import</span> <span class="n">faiss</span>
+<span class="kn">import</span> <span class="n">numpy</span> <span class="k">as</span> <span class="n">np</span>
 
 <span class="c1"># 예시로 10000개의 128차원 이미지 벡터 생성
-</span><span class="n">image_vectors</span> <span class="o">=</span> <span class="n">np</span><span class="p">.</span><span class="n">random</span><span class="p">.</span><span class="n">random</span><span class="p">((</span><span class="mi">10000</span><span class="p">,</span> <span class="mi">128</span><span class="p">)).</span><span class="n">astype</span><span class="p">(</span><span class="s">'float32'</span><span class="p">)</span>
+</span><span class="n">image_vectors</span> <span class="o">=</span> <span class="n">np</span><span class="p">.</span><span class="n">random</span><span class="p">.</span><span class="nf">random</span><span class="p">((</span><span class="mi">10000</span><span class="p">,</span> <span class="mi">128</span><span class="p">)).</span><span class="nf">astype</span><span class="p">(</span><span class="sh">'</span><span class="s">float32</span><span class="sh">'</span><span class="p">)</span>
 
 <span class="c1"># Faiss 인덱스 생성 및 벡터 추가
-</span><span class="n">index</span> <span class="o">=</span> <span class="n">faiss</span><span class="p">.</span><span class="n">IndexFlatL2</span><span class="p">(</span><span class="mi">128</span><span class="p">)</span>
-<span class="n">index</span><span class="p">.</span><span class="n">add</span><span class="p">(</span><span class="n">image_vectors</span><span class="p">)</span>
+</span><span class="n">index</span> <span class="o">=</span> <span class="n">faiss</span><span class="p">.</span><span class="nc">IndexFlatL2</span><span class="p">(</span><span class="mi">128</span><span class="p">)</span>
+<span class="n">index</span><span class="p">.</span><span class="nf">add</span><span class="p">(</span><span class="n">image_vectors</span><span class="p">)</span>
 
 <span class="c1"># 검색할 이미지 벡터 생성
-</span><span class="n">query_vector</span> <span class="o">=</span> <span class="n">np</span><span class="p">.</span><span class="n">random</span><span class="p">.</span><span class="n">random</span><span class="p">((</span><span class="mi">1</span><span class="p">,</span> <span class="mi">128</span><span class="p">)).</span><span class="n">astype</span><span class="p">(</span><span class="s">'float32'</span><span class="p">)</span>
+</span><span class="n">query_vector</span> <span class="o">=</span> <span class="n">np</span><span class="p">.</span><span class="n">random</span><span class="p">.</span><span class="nf">random</span><span class="p">((</span><span class="mi">1</span><span class="p">,</span> <span class="mi">128</span><span class="p">)).</span><span class="nf">astype</span><span class="p">(</span><span class="sh">'</span><span class="s">float32</span><span class="sh">'</span><span class="p">)</span>
 
 <span class="c1"># 유사한 이미지 10개 검색
 </span><span class="n">k</span> <span class="o">=</span> <span class="mi">10</span>
-<span class="n">D</span><span class="p">,</span> <span class="n">I</span> <span class="o">=</span> <span class="n">index</span><span class="p">.</span><span class="n">search</span><span class="p">(</span><span class="n">query_vector</span><span class="p">,</span> <span class="n">k</span><span class="p">)</span>
+<span class="n">D</span><span class="p">,</span> <span class="n">I</span> <span class="o">=</span> <span class="n">index</span><span class="p">.</span><span class="nf">search</span><span class="p">(</span><span class="n">query_vector</span><span class="p">,</span> <span class="n">k</span><span class="p">)</span>
 
 <span class="c1"># 검색 결과 출력
-</span><span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">k</span><span class="p">):</span>
-    <span class="k">print</span><span class="p">(</span><span class="sa">f</span><span class="s">"인덱스 </span><span class="si">{</span><span class="n">I</span><span class="p">[</span><span class="mi">0</span><span class="p">][</span><span class="n">i</span><span class="p">]</span><span class="si">}</span><span class="s">, 거리 </span><span class="si">{</span><span class="n">D</span><span class="p">[</span><span class="mi">0</span><span class="p">][</span><span class="n">i</span><span class="p">]</span><span class="si">}</span><span class="s">"</span><span class="p">)</span>
+</span><span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nf">range</span><span class="p">(</span><span class="n">k</span><span class="p">):</span>
+    <span class="nf">print</span><span class="p">(</span><span class="sa">f</span><span class="sh">"</span><span class="s">인덱스 </span><span class="si">{</span><span class="n">I</span><span class="p">[</span><span class="mi">0</span><span class="p">][</span><span class="n">i</span><span class="p">]</span><span class="si">}</span><span class="s">, 거리 </span><span class="si">{</span><span class="n">D</span><span class="p">[</span><span class="mi">0</span><span class="p">][</span><span class="n">i</span><span class="p">]</span><span class="si">}</span><span class="sh">"</span><span class="p">)</span>
 </code></pre></div></div>
 
 <p>이 예제에서는 10000개의 무작위 128차원 이미지 벡터를 생성하여 Faiss 인덱스에 추가하고, 쿼리 벡터를 사용해 가장 유사한 10개의 이미지를 찾는다. <code class="language-plaintext highlighter-rouge">IndexFlatL2</code>는 L2 거리(유클리디언 거리)를 기반으로 유사성을 계산하는 인덱스 타입이다. 이 코드는 Faiss를 활용한 기본적인 이미지 유사성 검색 과정을 보여준다.</p>
-
-		
-	</div>
+</div>
 </article>
-
 
 
 	  </main>
@@ -211,11 +203,11 @@
 	  </div>
 	    
 	    <!-- Footer -->
-	    <footer><span>@2017 - Monochrome</span></footer>
+	    <footer><span>@2024 - Monochrome</span></footer>
 
 
 	    <!-- Script -->
-      <script src="/blog/js/main.js"></script>	
+      <script src="/js/main.js"></script>
 
 
 	</div>

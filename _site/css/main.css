@@ -8,7 +8,19 @@
   box-sizing: border-box;
 }
 
-html, body, h1, h2, h3, h4, h5, h6, p, ul, ol, li, img {
+html,
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+ol,
+li,
+img {
   margin: 0;
   padding: 0;
   border: 0;
@@ -17,7 +29,7 @@ html, body, h1, h2, h3, h4, h5, h6, p, ul, ol, li, img {
 /*- Base color -*/
 /*- Base settings -*/
 html {
-  background-color: #FFFFFF;
+  background-color: #ffffff;
   font-size: 16px;
   line-height: 1.8;
   color: #333333;
@@ -120,7 +132,9 @@ body {
 }
 
 /*- Typography for medium and small screen, based on 16px font-size -*/
-p, ul, ol {
+p,
+ul,
+ol {
   font-size: 1em; /* 16px */
   line-height: 1.8em;
   margin-bottom: 1.5em; /* 24px/16px */
@@ -138,7 +152,10 @@ h2 {
   padding: 1em 0 0 0; /* 12px/24px * 2, only top (Use padding instead of margin to maintain proximity with paragwithph) */
 }
 
-h3, h4, h5, h6 {
+h3,
+h4,
+h5,
+h6 {
   font-size: 1.125em; /* 18px/16px */
   line-height: 1.8em;
   padding: 0.66667em 0; /* 12px/18px * 2 (Use padding instead of margin to maintain proximity with paragraph) */
@@ -154,13 +171,17 @@ blockquote {
   background-color: #f2f2f2;
   padding: 0 1.5em; /* 24px/18px */
 }
-blockquote p, blockquote ul, blockquote ol {
+blockquote p,
+blockquote ul,
+blockquote ol {
   padding: 1.5em 0; /* 24px/18px */
 }
 
 /*- Typography for big screen, based on 18px font-size -*/
 @media (min-width: 940px) {
-  p, ul, ol {
+  p,
+  ul,
+  ol {
     font-size: 1em; /* 18px */
     line-height: 1.8em;
     margin-bottom: 1.3334em; /* 24px/18px */
@@ -175,7 +196,10 @@ blockquote p, blockquote ul, blockquote ol {
     line-height: 1.8em;
     padding: 0.66667em 0 0 0; /* 12px/36px * 2, pnly top (Use padding instead of margin to maintain proximity with paragraph) */
   }
-  h3, h4, h5, h6 {
+  h3,
+  h4,
+  h5,
+  h6 {
     font-size: 1.3334em; /* 24px/18px */
     line-height: 1.8em;
     padding: 0.5em 0; /* 12px/24px * 2 (Use padding instead of margin to maintain proximity with paragraph) */
@@ -190,13 +214,16 @@ blockquote p, blockquote ul, blockquote ol {
     background-color: #f2f2f2;
     padding: 0 1.33334em; /* 24px/18px */
   }
-  blockquote p, blockquote ul, blockquote ol {
+  blockquote p,
+  blockquote ul,
+  blockquote ol {
     padding: 1.33334em 0; /* 24px/18px */
   }
 }
 /* -- General Layout -- */
 /* Navigation */
-#nav a, #nav-left a {
+#nav a,
+#nav-left a {
   display: block;
   color: #333333;
   padding: 0.33334em 0;
@@ -204,25 +231,28 @@ blockquote p, blockquote ul, blockquote ol {
   font-weight: 400;
 }
 @media (min-width: 940px) {
-  #nav a, #nav-left a {
+  #nav a,
+  #nav-left a {
     font-size: 1em;
   }
 }
-#nav a:hover, #nav-left a:hover {
+#nav a:hover,
+#nav-left a:hover {
   background-color: rgba(13, 13, 13, 0.6);
 }
-#nav span, #nav-left span {
+#nav span,
+#nav-left span {
   font-weight: 200;
 }
 
 #nav {
   width: 14rem;
   position: fixed;
-  background-color: #FFFFFF;
+  background-color: #ffffff;
   top: 0;
   bottom: 0;
   right: -14rem;
-  color: #FFFFFF;
+  color: #ffffff;
   opacity: 0.95;
   -webkit-transition: all 0.3s ease-in;
   -moz-transition: all 0.3s ease-in;
@@ -236,11 +266,11 @@ blockquote p, blockquote ul, blockquote ol {
 #nav-left {
   width: 14rem;
   position: fixed;
-  background-color: #FFFFFF;
+  background-color: #ffffff;
   top: 0;
   bottom: 0;
   left: -14rem;
-  color: #FFFFFF;
+  color: #ffffff;
   opacity: 0.95;
   -webkit-transition: all 0.3s ease-in;
   -moz-transition: all 0.3s ease-in;
@@ -468,18 +498,21 @@ code {
 }
 
 /* Set the vertical rhythm (and padding-left) for lists inside post content */
-.content ul, .content ol {
+.content ul,
+.content ol {
   line-height: 1.8em;
   padding-left: 1.5em;
 }
 @media (min-width: 940px) {
-  .content ul, .content ol {
+  .content ul,
+  .content ol {
     line-height: 1.8em;
   }
 }
 
 /* Pages */
-#page ul, #page ol {
+#page ul,
+#page ol {
   padding-left: 1.5em;
 }
 
@@ -498,7 +531,7 @@ code {
 
 .page-item {
   background-color: #4d4d4d;
-  color: #FFFFFF;
+  color: #ffffff;
   padding: 4px 8px;
   font-weight: 400;
   padding: 0.5em 1em;
@@ -510,7 +543,7 @@ code {
 
 /* Footer */
 footer {
-  background-color: #FFFFFF;
+  background-color: #ffffff;
   color: #333333;
   text-align: center;
   padding: 0.6667em 0;
@@ -622,7 +655,7 @@ footer {
   color: #008080;
 } /* Name.Attribute */
 .highlight .nb {
-  color: #0086B3;
+  color: #0086b3;
 } /* Name.Builtin */
 .highlight .nc {
   color: #445588;
